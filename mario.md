@@ -193,9 +193,9 @@ Hoeveel wisselgeld moet er gegeven worden? 0.41
 
 ![](coinchange.png)
 
-In een ver verleden toen er nog actief werd betaald door middel van contanten was een muntenhouder als hierboven onmisbaar. Het vervelende was dat er voor elk muntje een levertje moest worden ingedrukt, en dit kostte tijd. Gelukkig zijn wij er al computer scientists om het aantal terug te geven muntjes te minimaliseren door middel van "greedy algoritmes".
+In een ver verleden toen er nog actief werd betaald door middel van contanten was een muntenhouder als hierboven onmisbaar. Het vervelende is dat er voor elk muntje een levertje moest worden ingedrukt, en dit kost tijd. Gelukkig zijn wij er al computer scientists om het aantal terug te geven muntjes te minimaliseren door middel van "greedy algoritmes".
 
-Een greedy algoritme is een algoritme dat altijd de beste lokale keuze maakt op weg naar een antwoord. Alsof je fietst en dan op elk kruispunt de afslag kiest waarvan jij op dat moment denkt dat die zo snel mogelijk zal leiden tot je eindbestemming. Dit soort algoritmes leiden voor sommige problemen altijd tot een optimale oplossing, maar niet voor alle problemen.
+Een greedy algoritme is een algoritme dat altijd de beste lokale keuze maakt op weg naar een antwoord. Alsof je fietst en dan op elk kruispunt de afslag kiest waarvan jij op dat moment denkt dat die zo snel mogelijk leidt tot je eindbestemming. Dit soort algoritmes leiden voor sommige problemen altijd tot een optimale oplossing, maar niet voor alle problemen.
 
 Stel je voor dat een kassière een klant wisselgeld schuldig staat, en dat deze kassière vervolgens op de levertjes kan drukken om kwartjes (25c), dubbeltjes (10c), stuivers (5c), en centen (1c) te krijgen. Een oplossing voor dit probleem is één of meer drukken op de levertjes, en we willen zo min mogelijk levertjes indrukken. Neem een "gierige" kassière die elke keer als hij op een levertje moet drukken, op het levertje drukt met de hoogst mogelijk waarde welke nog gedrukt mag worden. Bijvoorbeeld als een klant nog 41 cent schuldig staat, dan drukt de kassière eerst op het levertje voor een kwartje. Er blijft dan nog (41 - 25 =) 16 cent over. Nu mag de kassière niet meer drukken op het levertje voor een kwartje, want dan zou hij te veel wisselgeld geven. Dus drukt hij voor een dubbeltje, en daarmee blijft er nog 6 cent over. Dit volgt dan met een druk voor een stuiver, en tot slot een cent. In totaal krijgt de klant dus één kwartje, één dubbeltje, één stuiver, en één cent, dit maakt 4 munten in totaal.
 
@@ -211,7 +211,7 @@ Het blijkt dat deze greedy aanpak altijd een optimale oplossing levert voor dit 
 ## Hints
 
 * Vergeet het deel achter de komma niet als je converteert naar een integer!
-* Hoe je dit probleem aanpakt is aan jou. Je zou bijvoorbeeld loops kunnen gebruiken of gebruik kunnen maken van de module operator `%`. Probeer maar eens `26 % 8`.
+* Hoe je dit probleem aanpakt is aan jou. Je zou bijvoorbeeld loops kunnen gebruiken of gebruik kunnen maken van de modulo operator `%`. Probeer maar eens `26 % 8`.
 
 ## Testing
 

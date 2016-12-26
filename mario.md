@@ -107,10 +107,10 @@ Was dit niet het probleem? Kijk dan nog eens goed naar je code, staat er bijvoor
 Implementeer een programma dat een gebruiker zijn waterverbruik reporteert, door het aantal minuten douchen te converteren naar flesjes drinkwater.
 
 ```
-Hoe veel minuten douche je? 1
+Hoeveel minuten douche je? 1
 12
 
-Hoe veel minuten douche je? 10
+Hoeveel minuten douche je? 10
 120
 ```
 

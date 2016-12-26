@@ -12,7 +12,7 @@
 
 Python is zelf een programma, en moet dus waarschijnlijk nog geïnstalleerd worden op je computer. Wij gebruiken bij deze cursus standaard de *Canopy*-distributie; een pakket met Python en een heleboel handige functies om te hergebruiken. Canopy is gratis voor gebruik in het onderwijs.
 
-Hier kun je Canopy downloaden: <https://store.enthought.com/downloads/>. Als het goed is, wordt op de website automatisch de juiste versie voor jouw systeem geselecteerd. Druk op de knop "DOWNLOAD Canopy" om te starten.
+Canopy kun je [hier](https://store.enthought.com/downloads/) downloaden. Als het goed is, wordt op de website automatisch de juiste versie voor jouw systeem geselecteerd. Druk op de knop "DOWNLOAD Canopy" om te starten.
 
 - Op *Windows* bestaat de download uit een **.exe**-bestand. Dubbelklik om de installatie te starten. In principe kun je alle standaardopties accepteren, maar [hier](http://docs.enthought.com/canopy/quick-start/install_windows.html) staat nog wat meer uitleg.
   
@@ -88,4 +88,11 @@ Ben je tevreden? Test je programma dan met checkpy. Dit doe je door de volgende 
 import checkpy
 checkpy.test("hello")
 ```
+
+Als je alleen maar happy smileys ziet dan slagen de tests, en kun je nu verder met de volgende opdracht. Slagen ze niet, dan is het tijd om te debuggen. Zie je de volgende error "No such file or directory:", probeer dan eens rechts te klikken de in Python terminal en het volgende aan te vinken:
+
+![](sync.png)
+
+Was dit niet het probleem? Kijk dan nog eens goed naar je code, staat er bijvoorbeeld geen extra spatie ergens? Kom je er niet uit, tik even een assistent aan!
+
 

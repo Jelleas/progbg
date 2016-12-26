@@ -162,6 +162,7 @@ Aan het einde van wereld 1-1 in Super Mario Brothers moet Mario een halve pyrami
 * Schrijf in een bestand genaamd `mario.py` een programma dat de halve pyramide van Mario nabouwt door middel van hashes (`#`).
 * Vraag eerst aan de gebruiker de hoogte van de halve piramide. Dit mag enkel een geheel positief getal zijn tussen 0 en 23. (0 en 23 wel, -1, 24 en 176 niet)
 * Wanneer de gebruiker een foute hoogte invult vraag je de gebruiker opnieuw naar de hoogte. Net zo lang tot de gebruiker een goede hoogte invult.
+* Je mag aannemen dat de gebruiker enkel floats en integer invult.
 * Als de hoogte bekend is, genereer dan door middel van `print` en één of meer loops de halve pyramide.
 * Let goed op dat er geen spatie tussen de rand van je scherm en de onderste laag van je pyramide staat!
 
@@ -171,7 +172,7 @@ Aan het einde van wereld 1-1 in Super Mario Brothers moet Mario een halve pyrami
 * Tel goed hoe veel spaties en hashes er op elke regel moeten staan.
 * Denk goed na over welke loop structuur (`for` en `while`) je wilt gebruiken.
 * Deel het probleem op in delen. Zorg bijvoorbeeld eerst dat de gebruiker een getal kan invoeren. Daarna kun je kijken of je kan voorkomen dat de gebruikers foutieve input geeft, en dan de pyramide zelf.
-* Kijk ook of de gebruiker geen vreemde waardes invoert als invoer, zoals bijvoorbeeld strings of floats! Je kan kijken of het type van de ingevoerde waarde een integer is door middel van `isinstance`. Probeer bijvoorbeeld maar eens `isinstance(7, int)` en `isinstance("zeven", int)`.
+* Kijk ook of de gebruiker geen vreemde waardes invoert als invoer, zoals bijvoorbeeld floats! Je kan kijken of het type van de ingevoerde waarde een integer is door middel van `isinstance`. Probeer bijvoorbeeld maar eens `isinstance(7, int)` en `isinstance("zeven", int)`.
 
 ## Testing
 Loop weer eerst je eigen programma na. Wat gebeurt er als je 0 voor hoogte invult? Kan je programma alle foute input afhandelen? Ook als de gebruiker als hoogte helemaal geen getal invoert, zoals de string `vijf` bijvoorbeeld? Test dan je programma door middel van checkpy met:
@@ -317,7 +318,7 @@ import matplotlib.pyplot as plt
 x_coords = [0,1,2,3,4,5]
 y_coords = [0,1,4,9,16,25]
 
-plt.plot(x_coords, y_coords, 'go')
+plt.plot(x_coords, y_coords, "go")
 plt.show()
 ```
 
@@ -333,10 +334,10 @@ x_squared = [0,1,4,9,16,25]
 x_cubed   = [0,1,8,27,64,125]
 
 # let op: grafiek met twee datasets!
-plt.plot(x_values, x_squared, "go", x_values, x_cubed, "r-"")
+plt.plot(x_values, x_squared, "go", x_values, x_cubed, "r-")
 
-plt.xlabel('de x-ax is klein')
-plt.ylabel('de y-as ix groot', fontsize = 25)
+plt.xlabel("de x-ax is klein")
+plt.ylabel("de y-as ix groot", fontsize = 25)
 
 plt.text(1.00,100., "mijn eerste plotje", color = "blue", fontsize = 20)
 plt.text(4.00,100., "$x^3$", color = "red", fontsize = 20)
